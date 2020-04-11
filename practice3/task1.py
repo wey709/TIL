@@ -13,19 +13,21 @@ def cross_entropy(y, y_hat):
     return ce
 
 
-w = np.array([-1, -1])
+w = np.array([0.0, 0.0])
 b = 0
-k = 1000
+k = 100
 alpha = 0.009
 
 for i in range(k):
+    print('tx', trainX)
+    print('w', w)
     Z = np.dot(w, trainX) + b  # (1,2) (2,m) = (1,m)
-    A = 1.0/(1.0+np.exp(-Z))
+    print('z', Z)
+    A = sigmoid(Z)
     dZ = A - trainY  # 1*m vector
-    dW_1 = np.dot(trainX[0], dZ.T)  # (1,m) (1,m)
-    #print(X_TRAIN[0], "XT0")
+    dW_1 = np.dot(trainX[0], dZ.T)  # (1,m) (m,1)
     dW_1 = 1/m * dW_1
-    #print(dW_1)
+    print("dw_1", dW_1)
     dW_2 = np.dot(trainX[1], dZ.T)
     dW_2 = 1/m * dW_2
     db = 1/m * np.sum(dZ)
@@ -37,13 +39,16 @@ for i in range(k):
     #print('b', b)
 
 accuracy_test = 0
-print("w", w, "B", b)
+print("w of task1", w, "B", b)
+#print('trainX', trainX)
+#print('Z', Z, 'A', A)
 z = np.dot(w, testX) + b
 for i in range(n):
     z_i = z[i]
-    if testY[i] == round(sigmoid(z_i)):
+    #print((sigmoid(z_i)))
+    if testY[i] == (round(sigmoid(z_i))):
         accuracy_test = accuracy_test + 1
 
-#print(X_TRAIN)
-print(trainY)
-print(accuracy_test)
+#print(testY)
+
+print("acc_task1", accuracy_test)

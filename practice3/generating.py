@@ -2,7 +2,7 @@ import numpy as np
 
 # GENERATE TRAINING & TEST DATA SET
 
-m = 1000
+m = 10
 n = 100
 
 # random.randint와 달리 np.random.randint는 half-open임
