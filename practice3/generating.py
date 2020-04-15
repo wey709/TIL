@@ -2,12 +2,11 @@ import numpy as np
 import random
 import math
 
-# GENERATE TRAINING & TEST DATA SET
+# generate training and test dataset
 
 m = 1000
 n = 100
 k = 1000
-# random.randint와 달리 np.random.randint는 half-open임
 
 x1_train = []
 x2_train = []
