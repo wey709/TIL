@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20401c11-f401-40dc-937e-1bf4dd3b3414" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/generating.py" beforeDir="false" afterPath="$PROJECT_DIR$/generating.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generating.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/task1.py" beforeDir="false" afterPath="$PROJECT_DIR$/task1.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task2.py" beforeDir="false" afterPath="$PROJECT_DIR$/task2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3.py" beforeDir="false" afterPath="$PROJECT_DIR$/task3.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +36,13 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/wey709/TIL.git" />
+      </set>
+    </option>
   </component>
   <component name="ProjectId" id="1aCmslhm9pu92hQVWVIonsNrVUo" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -222,6 +227,9 @@
       <workItem from="1586871569284" duration="8749000" />
       <workItem from="1586922416737" duration="10374000" />
       <workItem from="1586943161824" duration="1939000" />
+      <workItem from="1587013599205" duration="328000" />
+      <workItem from="1587023724010" duration="1119000" />
+      <workItem from="1587026632154" duration="2035000" />
     </task>
     <servers />
   </component>
@@ -287,11 +295,11 @@
       <screen x="0" y="0" width="1280" height="813" />
     </state>
     <state width="1237" height="211" key="GridCell.Tab.1.right/0.0.1280.813@0.0.1280.813" timestamp="1586873987207" />
-    <state x="107" y="58" key="SettingsEditor" timestamp="1586873109445">
-      <screen x="0" y="0" width="1280" height="813" />
+    <state x="295" y="71" width="996" height="750" key="SettingsEditor" timestamp="1587027406643">
+      <screen x="0" y="0" width="1707" height="920" />
     </state>
     <state x="107" y="58" key="SettingsEditor/0.0.1280.813@0.0.1280.813" timestamp="1586873109445" />
-    <state x="355" y="103" key="SettingsEditor/0.0.1707.920@0.0.1707.920" timestamp="1586503983458" />
+    <state x="295" y="71" width="996" height="750" key="SettingsEditor/0.0.1707.920@0.0.1707.920" timestamp="1587027406643" />
     <state x="333" y="231" key="com.intellij.ide.util.TipDialog" timestamp="1586943437946">
       <screen x="0" y="0" width="1280" height="813" />
     </state>

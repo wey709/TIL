@@ -1,10 +1,10 @@
 # task1과 같은 데이터셋 공유해야함.
+
 import numpy as np
-from task1 import trainX, testX, trainY, testY, m, n
-from generating import sigmoid
+from task1 import trainX, testX, trainY, testY, m, n, sigmoid
 
 k = 1000
-alpha = 0.45
+alpha = 0.3
 
 w_1 = np.random.rand(1, 2)  # from layer0 to layer 1
 b_1 = np.random.rand(1, 1)
@@ -36,10 +36,11 @@ testA_2 = sigmoid(testZ_2)
 testY_hat = np.round(testA_2)
 acc_test = 0
 
+
 for i in range(len(testY_hat[0])):
     if testY[0][i] == testY_hat[0][i]:
         acc_test = acc_test + 1
 
-
+print("w of task2", w_1, w_2, "B", b_1, b_2)
 print("task2:", acc_test)
 
