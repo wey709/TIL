@@ -15,9 +15,11 @@ x2_train = []
 y_train = []
 
 for i in range(m):
+    random.seed(i)
     x1_train.append(random.uniform(-2, 2))
+    random.seed(i+m)
     x2_train.append(random.uniform(-2, 2))
-    if x1_train[-1]*x2_train[-1] > x2_train[-1]:
+    if x1_train[-1]*x1_train[-1] > x2_train[-1]:
         y_train.append(1)
     else:
         y_train.append(0)
@@ -27,16 +29,14 @@ x2_test = []
 y_test = []
 
 for j in range(n):
+    random.seed(j)
     x1_test.append(random.uniform(-2, 2))
+    random.seed(j+n)
     x2_test.append(random.uniform(-2, 2))
-    if x1_test[-1] * x2_test[-1] > x2_test[-1]:
+    if x1_test[-1] * x1_test[-1] > x2_test[-1]:
         y_test.append(1)
     else:
         y_test.append(0)
-
-#with open('trainX.txt', 'w') as f:
-#    f.write(trainX)
-#    f.close()
 
 
 

@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20401c11-f401-40dc-937e-1bf4dd3b3414" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_set.npz" beforeDir="false" afterPath="$PROJECT_DIR$/data_set.npz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task1.py" beforeDir="false" afterPath="$PROJECT_DIR$/task1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task2.py" beforeDir="false" afterPath="$PROJECT_DIR$/task2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task3.py" beforeDir="false" afterPath="$PROJECT_DIR$/task3.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -259,6 +259,7 @@
       <workItem from="1587026632154" duration="2035000" />
       <workItem from="1587086487900" duration="5543000" />
       <workItem from="1587099004808" duration="2509000" />
+      <workItem from="1587102906714" duration="4067000" />
     </task>
     <servers />
   </component>
