@@ -1,15 +1,29 @@
 # task1과 같은 데이터셋 공유해야함.
 
 import numpy as np
-from task1 import trainX, testX, trainY, testY, m, n, sigmoid
 
+m = 1000
+n = 100
 k = 1000
 alpha = 0.3
+
+load = np.load("data_set.npz")
+
+trainX = load['trainX']
+trainY = load['trainY']
+testX = load['testX']
+testY = load['testY']
 
 w_1 = np.random.rand(1, 2)  # from layer0 to layer 1
 b_1 = np.random.rand(1, 1)
 w_2 = np.random.rand(1, 1)  # from layer1 to layer 2
 b_2 = np.random.rand(1, 1)
+
+
+def sigmoid(z):
+    fz = 1.0/(1.0+np.exp(-z))
+    return fz
+
 
 for i in range(k):
     z_1 = np.dot(w_1, trainX) + b_1  # (1,2) (2,1000)
@@ -41,6 +55,7 @@ for i in range(len(testY_hat[0])):
     if testY[0][i] == testY_hat[0][i]:
         acc_test = acc_test + 1
 
+print('train sample of task2', trainX)
 print("w of task2", w_1, w_2, "B", b_1, b_2)
 print("task2:", acc_test)
 

@@ -8,6 +8,7 @@ import math
 m = 1000
 n = 100
 k = 1000
+alpha = 0.3
 
 x1_train = []
 x2_train = []
@@ -33,12 +34,21 @@ for j in range(n):
     else:
         y_test.append(0)
 
+#with open('trainX.txt', 'w') as f:
+#    f.write(trainX)
+#    f.close()
+
+
+
 
 trainX = np.array([x1_train, x2_train])
 trainY = np.array([y_train])
 
 testX = np.array([x1_test, x2_test])
 testY = np.array([y_test])
+
+
+np.savez("data_set.npz", trainX=trainX, trainY=trainY, testX=testX, testY=testY)
 
 
 def sigmoid(z):
@@ -53,10 +63,9 @@ def cross_entropy(y, y_hat):
 
 # initialize and training
 
-w = np.random.rand(1,2)
-b = np.random.rand(1,1)
-k = 1000
-alpha = 0.3
+w = np.random.rand(1, 2)
+b = np.random.rand(1, 1)
+
 
 for i in range(k):
     z = np.dot(w, trainX) + b # (1,2) (2, m)
@@ -73,7 +82,7 @@ print("w of task1", w, "B", b)
 # get accuracy
 
 testZ = np.dot(w, testX) + b
-testA = sigmoid(z)
+testA = sigmoid(testZ)
 test_hat = np.round(testA)
 acc_task1 = 0
 

@@ -1,6 +1,7 @@
 import numpy as np
-from task2 import trainX, testX, trainY, testY, m, n, sigmoid
 
+m = 1000
+n = 100
 k = 1000
 alpha = 0.3
 
@@ -8,7 +9,17 @@ w_1 = np.random.rand(3, 2)  # from layer0 to layer 1
 b_1 = np.random.rand(3, 1)
 w_2 = np.random.rand(1, 3)  # from layer1 to layer 2
 b_2 = np.random.rand(1, 1)
+load = np.load("data_set.npz")
 
+trainX = load['trainX']
+trainY = load['trainY']
+testX = load['testX']
+testY = load['testY']
+
+
+def sigmoid(z):
+    fz = 1.0/(1.0+np.exp(-z))
+    return fz
 
 for i in range(k):
     z_1 = np.dot(w_1, trainX) + b_1  # (3, 2) (2,1000)
@@ -35,12 +46,17 @@ testA_2 = sigmoid(testZ_2)
 testY_hat = np.round(testA_2)
 acc_test_3 = 0
 
+
 for i in range(len(testY_hat[0])):
     if testY_hat[0][i] == testY[0][i]:
         acc_test_3 = acc_test_3 + 1
 
+
+#print('train sample of task2', trainX)
+
 print("w of task2", w_1, w_2, "B", b_1, b_2)
 print("task3:", acc_test_3)
+print(np.version.version)
 
 
 
