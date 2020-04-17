@@ -3,7 +3,7 @@ import numpy as np
 m = 1000
 n = 100
 k = 1000
-alpha = 0.36
+alpha = 0.3
 
 w_1 = np.random.rand(3, 2)  # from layer0 to layer 1
 b_1 = np.random.rand(3, 1)
@@ -15,7 +15,6 @@ trainX = load['trainX']
 trainY = load['trainY']
 testX = load['testX']
 testY = load['testY']
-
 
 
 
@@ -54,12 +53,6 @@ for j in range(len(testY_hat[0])):
         acc_test_3 = acc_test_3 + 1
 
 
-#print('train sample of task2', trainX)
 
 print("w of task3", w_1, w_2, "B", b_1, b_2)
 print("task3:", acc_test_3)
-print(np.version.version)
-from platform import python_version
-print(python_version())
-print(trainX[:10])
-
