@@ -5,6 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data_set.npz" beforeDir="false" afterPath="$PROJECT_DIR$/data_set.npz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task1.py" beforeDir="false" afterPath="$PROJECT_DIR$/task1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task2.py" beforeDir="false" afterPath="$PROJECT_DIR$/task2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task3.py" beforeDir="false" afterPath="$PROJECT_DIR$/task3.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -260,6 +261,7 @@
       <workItem from="1587099004808" duration="2509000" />
       <workItem from="1587102906714" duration="4067000" />
       <workItem from="1587109663856" duration="215000" />
+      <workItem from="1587310373701" duration="2460000" />
     </task>
     <servers />
   </component>
@@ -338,18 +340,18 @@
     </state>
     <state x="107" y="58" key="SettingsEditor/0.0.1280.813@0.0.1280.813" timestamp="1586873109445" />
     <state x="295" y="71" width="996" height="750" key="SettingsEditor/0.0.1707.920@0.0.1707.920" timestamp="1587101451793" />
-    <state x="333" y="231" key="com.intellij.ide.util.TipDialog" timestamp="1586943437946">
+    <state x="333" y="231" key="com.intellij.ide.util.TipDialog" timestamp="1587310381804">
       <screen x="0" y="0" width="1280" height="813" />
     </state>
-    <state x="333" y="231" key="com.intellij.ide.util.TipDialog/0.0.1280.813@0.0.1280.813" timestamp="1586943437946" />
-    <state x="707" y="172" width="672" height="600" key="search.everywhere.popup" timestamp="1586926746493">
+    <state x="333" y="231" key="com.intellij.ide.util.TipDialog/0.0.1280.813@0.0.1280.813" timestamp="1587310381804" />
+    <state x="707" y="172" width="672" height="600" key="search.everywhere.popup" timestamp="1587310840695">
       <screen x="0" y="0" width="1280" height="813" />
     </state>
-    <state x="707" y="172" width="672" height="600" key="search.everywhere.popup/0.0.1280.813@0.0.1280.813" timestamp="1586926746493" />
+    <state x="707" y="172" width="672" height="600" key="search.everywhere.popup/0.0.1280.813@0.0.1280.813" timestamp="1587310840695" />
     <state x="943" y="195" width="672" height="678" key="search.everywhere.popup/0.0.1707.920@0.0.1707.920" timestamp="1586504316450" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/practice3$task1.coverage" NAME="task1 Coverage Results" MODIFIED="1586925081344" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/practice3$dla_project3_Copy1.coverage" NAME="dla_project3-Copy1 Coverage Results" MODIFIED="1587099541915" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/practice3$task1.coverage" NAME="task1 Coverage Results" MODIFIED="1586925081344" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
