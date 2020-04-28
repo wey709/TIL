@@ -6,4 +6,4 @@ TIL 2020 spring-summer
 Assignments from the lecture 'Deep Learning and Application'.
 
 ### MS_Java
-projects from Microsoft Java course. 
+Projects from the Microsoft Java course.  
