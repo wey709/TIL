@@ -1,7 +1,8 @@
 import java.awt.*;
 
 public class Giant extends Critter {
-    static int moves = 0;
+    int moves = -1;
+    //boolean isHop = false;
     public Giant(){
         super();
     }
@@ -14,14 +15,31 @@ public class Giant extends Critter {
     @Override
     public Action getMove(CritterInfo info) {
         if(info.frontThreat()){
+            moves++;
             return Action.INFECT;
         }
-        else if(info.)
+        else{ // 다시 해야함
+            moves++;
+            return Action.HOP;
+        }
     }
 
     @Override
     public String toString() {
-        return super.toString();
+        if(moves == -1){
+            return "";
+        }
+        int dividedMoves = moves/6;
+
+        if(dividedMoves%3 == 0){
+            return "fee";
+        }
+        else if(dividedMoves%3 ==1 ){
+            return "fie";
+        }
+        else{
+            return "foe";
+        }
     }
 
 
