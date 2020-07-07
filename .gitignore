@@ -2,3 +2,7 @@
 make-with-js/
 nomad_js/
 make-with-js/
+**/.vs
+**/Debug
+*.sln
+*.vcxproj

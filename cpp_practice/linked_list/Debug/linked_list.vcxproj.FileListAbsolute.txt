@@ -1,2 +1,0 @@
-C:\Users\verte\dev\cpp_practice\linked_list\Debug\linked_list.exe
-C:\Users\verte\dev\cpp_practice\linked_list\Debug\linked_list.pdb
