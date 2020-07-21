@@ -1,4 +1,5 @@
 #include <iostream>
+#include <queue>
 
 using namespace std;
 
@@ -58,17 +59,39 @@ Node* Rchild(int value, Node* treePointer) {
 	}
 }
 
-void Inorder(Node* treePointer) {
+void inOrder(Node* treePointer) {
 	if(treePointer!=nullptr){
-		Inorder(treePointer->left_child);
+		inOrder(treePointer->left_child);
 		cout << treePointer->value << endl;
-		Inorder(treePointer->right_child);
+		inOrder(treePointer->right_child);
 	}
 
 
 }
 
-//preorder, postorder, level-order
+void levelOrder(Node* root) {
+
+	queue<Node*> q;
+	q.push(root);
+	while (true) {
+		root = q.front();
+		cout << q.front()->value << endl;
+		q.pop();
+		if (root->left_child != nullptr) {
+			q.push(root->left_child);
+		}
+		if (root->right_child != nullptr) {
+			q.push(root->right_child);
+		}
+		if (q.empty() && root->left_child == nullptr && root->right_child == nullptr) {
+			break;
+		}
+	}
+
+
+}
+
+//preorder, postorder
 
 
 
@@ -79,7 +102,8 @@ int main() {
 	Node* third = Rchild(15, treePointer);
 	Node* fourth = Lchild(20, second);
 	Node* fifth = Rchild(25, third);
-	Inorder(treePointer);
+	// inOrder(treePointer);
+	levelOrder(treePointer);
 	//cout << treePointer->value << endl;
 	//cout << second->value << endl;
 
